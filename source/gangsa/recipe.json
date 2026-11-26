@@ -1,0 +1,143 @@
+{
+  "about": "gangsa: a synth engine of level 9 (docs/level-9.md): struck metal and wood of the gamelan and beyond, each voice a bank of up to six decaying sine partials of a material (saron, gender, bonang, gong, gambang, mbira, bell, bowl), struck by a mallet with a click, and a detuned twin bank for the ombak shimmer of a gamelan pair, spread to left and right. Stereo. Eight values: material, mallet, decay, ombak on the knobs; damp, strike, click, width with shift. 104 bytes of working memory a voice, cleared in its render when a voice is handed over (no reset function). Ten sounds of its own. T1 shows its own page, a picture of its own (gangsa-page.svg): a gangsa with its partials as blades, the material on a dial, the values as set in the four knob colours and the ombak's twin swaying at the beat and the mallet swinging at each note the synth is asked to start (the notes heard, level 5); where the picture cannot be made it paints the values on the base's blank page. It changes no place of the firmware and needs the base.",
+  "name": "gangsa",
+  "version": 6,
+  "interface": 1,
+  "build": "gangsa",
+  "sources": [
+    "examples/gangsa/gangsa.cpp",
+    "examples/gangsa/gangsa_card.s",
+    "examples/gangsa/gangsa_pictures.s"
+  ],
+  "works_with": [],
+  "serves": [],
+  "exports": [],
+  "pictures": [
+    {
+      "name": "gangsa-page.svg",
+      "file": "examples/gangsa/gangsa-page.svg.make"
+    }
+  ],
+  "card": {
+    "level": 9,
+    "frame": "gangsa_frame",
+    "pick": null,
+    "pictures": true,
+    "input": null,
+    "folders": [],
+    "asks": [
+      {
+        "kind": "engine",
+        "name": "gangsa",
+        "stereo": true,
+        "cycles": 40000,
+        "voice_bytes": 104,
+        "voice_align": 32,
+        "render": "gangsa_render",
+        "reset": null,
+        "shown": "gangsa_shown",
+        "params": [
+          {
+            "name": "material",
+            "low": 0,
+            "high": 7,
+            "start": 0
+          },
+          {
+            "name": "mallet",
+            "low": 0,
+            "high": 127,
+            "start": 100
+          },
+          {
+            "name": "decay",
+            "low": 0,
+            "high": 127,
+            "start": 87
+          },
+          {
+            "name": "ombak",
+            "low": 0,
+            "high": 127,
+            "start": 0
+          },
+          {
+            "name": "damp",
+            "low": 0,
+            "high": 127,
+            "start": 20
+          },
+          {
+            "name": "strike",
+            "low": 0,
+            "high": 127,
+            "start": 100
+          },
+          {
+            "name": "click",
+            "low": 0,
+            "high": 127,
+            "start": 40
+          },
+          {
+            "name": "width",
+            "low": 0,
+            "high": 127,
+            "start": 64
+          }
+        ],
+        "sounds": [
+          {
+            "name": "saron",
+            "file": "saron.json"
+          },
+          {
+            "name": "gender",
+            "file": "gender.json"
+          },
+          {
+            "name": "bonang",
+            "file": "bonang.json"
+          },
+          {
+            "name": "gong",
+            "file": "gong.json"
+          },
+          {
+            "name": "kempul",
+            "file": "kempul.json"
+          },
+          {
+            "name": "gambang",
+            "file": "gambang.json"
+          },
+          {
+            "name": "mbira",
+            "file": "mbira.json"
+          },
+          {
+            "name": "bell",
+            "file": "bell.json"
+          },
+          {
+            "name": "bowl",
+            "file": "bowl.json"
+          },
+          {
+            "name": "pair",
+            "file": "pair.json"
+          }
+        ]
+      },
+      {
+        "kind": "notes",
+        "name": "gangsa",
+        "note": "gangsa_note"
+      }
+    ]
+  },
+  "marks": [],
+  "named": true,
+  "sum": true,
+  "path": null
+}

@@ -1,0 +1,60 @@
+{
+  "about": "kotekan: a synth sequencer of level 5 (docs/level-5.md) that weaves the two interlocking parts of Balinese kotekan, polos and sangsih, around the pokok tone the player holds, in four styles (nyog cag, norot, telu, empat), on five keys of the octave (the map), 2 to 8 steps to the tape's beat. It takes every key and MIDI note and plays the figure with op1f_note_on and op1f_note_off. Its page, its own picture kotekan-page.svg (a gangsa with two mallets, the two parts as lanes, the map on a little keyboard), shows the four settings and the figure as it plays; without the picture it paints them on the base's blank page. The settings are kept with the tape as kotekan_settings (level 7). It changes no place of the firmware and needs the base.",
+  "name": "kotekan",
+  "version": 3,
+  "interface": 1,
+  "build": "kotekan",
+  "sources": [
+    "examples/kotekan/kotekan.cpp",
+    "examples/kotekan/kotekan_card.s",
+    "examples/kotekan/kotekan_pictures.s"
+  ],
+  "works_with": [],
+  "serves": [],
+  "exports": [],
+  "pictures": [
+    {
+      "name": "kotekan-page.svg",
+      "file": "examples/kotekan/kotekan-page.svg.make"
+    }
+  ],
+  "card": {
+    "level": 7,
+    "frame": "kotekan_frame",
+    "pick": null,
+    "pictures": true,
+    "input": "kotekan_input",
+    "folders": [],
+    "asks": [
+      {
+        "kind": "sequencer",
+        "name": "kotekan",
+        "synth_only": true,
+        "all_midi": true,
+        "shown": "kotekan_shown",
+        "tick": "kotekan_tick",
+        "key": "kotekan_key",
+        "run": "kotekan_run",
+        "octave": null,
+        "playing": null
+      },
+      {
+        "kind": "keeps",
+        "name": "kotekan",
+        "changed": "kotekan_changed",
+        "keys": [
+          {
+            "name": "kotekan_settings",
+            "files": [
+              "tape"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "marks": [],
+  "named": true,
+  "sum": true,
+  "path": null
+}
