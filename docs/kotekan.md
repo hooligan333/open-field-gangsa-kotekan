@@ -161,6 +161,17 @@ With gangsa, `saron` is the classic bar and `pair` adds the beating of a paired 
 driest. The figure holds at most three notes at once, but released notes keep ringing in their voices until a new
 note takes the voice, so all six may be busy.
 
+**Recordings** (in `media/`, made on the unit with version 3, gangsa's sounds and the `tuning` pack on gamelan / slendro):
+
+| Recording | What it shows |
+| --- | --- |
+| [Four styles](../media/kotekan-01-four-styles.mp3) | One held line (C D E G E D C) in nyog cag, norot, telu, empat; `saron`, 4 steps a beat |
+| [A pokok line woven](../media/kotekan-02-a-pokok-line-woven.mp3) | A longer line with the pokok struck too: telu, then empat; `pair` |
+| [Five rates](../media/kotekan-03-five-rates.mp3) | The same line at 2, 3, 4, 6 and 8 steps a beat; `gambang`, nyog cag |
+
+They were played over MIDI by a script and recorded from the unit's USB audio; each file's peak was brought to
+-1 dBFS and nothing else was done to the sound.
+
 ## Rate and the clock
 
 RATE is how many steps fall in one of the tape's beats, from the sequencer's 96 pulses a quarter: 48, 32, 24, 16 or
@@ -223,7 +234,8 @@ unit's log, its USB audio, and a webcam on the screen.
 - Seen whole through the webcam: `HOLD A KEY: THE POKOK`; `OFF: SEQ KEY STARTS IT`, under the unit's own `SEQ OFF`
   notice; `OWN 100.00` and `TAPE 100.00` at the right. The two photos in this guide are from that webcam.
 
-**Not tried**: the figures step for step, as said. The tests judged nothing by ear.
+**Not tried**: the figures step for step, as said. The tests judged nothing by ear: the recordings were checked by
+level, length and pitch.
 
 ## Versions
 

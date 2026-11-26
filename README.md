@@ -71,6 +71,16 @@ An [open-field](https://github.com/LaP0573/open-field) pack for the OP-1 Field o
 
 The key you hold is the pokok. Around it kotekan plays polos, the lower part, and sangsih, the upper part, in one of four styles: nyog cag, norot, telu and empat. Move to another key and the figure keeps its beat, heads for the new tone and reaches it at the start of its next cycle. It counts in a map of five keys to the octave, runs at 2 to 8 steps to the tape's beat, and sends its notes to the synth and over MIDI. Its four settings are kept with the tape.
 
+### Listen
+
+| Recording | What it shows |
+| --- | --- |
+| [Four styles](media/kotekan-01-four-styles.mp3) | One held line (C D E G E D C) in nyog cag, norot, telu, empat; gangsa's `saron`, 4 steps a beat |
+| [A pokok line woven](media/kotekan-02-a-pokok-line-woven.mp3) | A longer line with the pokok struck too: telu, then empat; gangsa's `pair` |
+| [Five rates](media/kotekan-03-five-rates.mp3) | The same line at 2, 3, 4, 6 and 8 steps a beat; gangsa's `gambang`, nyog cag |
+
+All three with the `tuning` pack on gamelan / slendro. Played over MIDI by a script and recorded from the unit's own USB audio; only the level was changed. They also play in the browser on [the packs page](https://hooligan333.github.io/open-field-packs/#kotekan).
+
 ### Use
 
 1. On the synth, open the list of sequencers and pick `kotekan`. Pack rows come after the unit's seven. The sequencer key switches it on and off.
@@ -92,9 +102,9 @@ With the `tuning` pack on gamelan / pelog the first three maps are the pelog mod
 **Tried on a unit** on 2026-11-25: OS 1.7.3, open-field 0.19 (base 37); it also starts on open-field 0.21 (base 39). The tests were run by remote control over USB: keys and knobs sent as MIDI, the unit's log, its USB audio, and a webcam on the screen.
 
 - Version 2, whose note code is version 3's: picked from the sequencer list, with another sequencer pack on the unit too. The page is drawn, also with `+POKOK`. All four styles ran: every note was one of the map's five tones and on the step grid, none was refused, none came late, and the synth was silent when the keys were let go.
-- Version 3, which changes the page's texts only: it starts beside 15 other packs with no trouble line in the log, and `HOLD A KEY: THE POKOK`, `OFF: SEQ KEY STARTS IT`, `OWN 100.00` and `TAPE 100.00` stand whole on the screen.
+- Version 3, which changes the page's texts only: it starts beside 15 other packs with no trouble line in the log, and `HOLD A KEY: THE POKOK`, `OFF: SEQ KEY STARTS IT`, `OWN 100.00` and `TAPE 100.00` stand whole on the screen. The three recordings were made with it, on open-field 0.21 (base 39).
 
-**Not tried**: the figures step for step against the tables in the guide (on a unit that depends on when each key is pressed). The tests judged nothing by ear.
+**Not tried**: the figures step for step against the tables in the guide (on a unit that depends on when each key is pressed). The tests judged nothing by ear: the recordings were checked by level, length and pitch.
 
 ### Limits
 
@@ -127,6 +137,7 @@ gangsa's ten sounds reach the sound list in two starts. At the first start with 
 | [media/gangsa-saron.jpg](media/gangsa-saron.jpg), [media/gangsa-gong.jpg](media/gangsa-gong.jpg) | Photos of gangsa's page on the unit's screen, with the `saron` and the `gong` sound |
 | [media/kotekan-page.jpg](media/kotekan-page.jpg), [media/kotekan-telu-playing.jpg](media/kotekan-telu-playing.jpg) | Photos of kotekan's page, waiting for a key and playing |
 | `media/gangsa-01-the-ten-sounds.mp3`, `media/gangsa-02-gamelan-in-slendro.mp3`, `media/gangsa-03-gong-bowl-bell-in-pelog.mp3` | gangsa's recordings |
+| `media/kotekan-01-four-styles.mp3`, `media/kotekan-02-a-pokok-line-woven.mp3`, `media/kotekan-03-five-rates.mp3` | kotekan's recordings |
 | `LICENSE` | The MIT licence |
 
 ## Build
